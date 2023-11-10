@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordenando</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="ordenando.js"></script>
+</head>
+
+<body>
+    <div>
+
+        <ul>
+            <li><h3>Ordenando Valores</h3></li>
+            <li><label>Valor</label></li>
+            
+            <li>
+                <input type="number" id="valor">
+            </li>
+            
+            <li><button onclick="add()" type="button" class="btn btn-primary">Adicionar</button></li>
+            
+            <li><hr></li>
+            
+            <li>
+                <select id="algoritmo" class="form-select">
+                    <option value="bubbleSort" selected>Bubble Sort</option>
+                    <option value="selectionSort">Selection Sort</option>
+                    <option value="quickSort">Quick Sort</option>
+                </select>
+            </li>
+            
+            <li>
+                <button onclick="ordenar()" type="button" class="btn btn-primary">Ordenar</button>
+                <button onclick="misturar()" type="button" class="btn btn-primary">Misturar</button>
+            </li>
+
+            <li><hr></li>
+
+            <li><ul id="valores"></ul></li>
+
+        </ul>        
+
+    </div>
+<!-- Evelynn (Carlos) Borges | Todos os Direitos Reservados -->
+</body>
+
+</html>
